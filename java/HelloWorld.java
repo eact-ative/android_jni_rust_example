@@ -1,3 +1,5 @@
+package com.eactative.ua.rn;
+
 class HelloWorld {
     // This declares that the static `hello` method will be provided
     // a native library.

@@ -5,7 +5,7 @@ use jni::objects::{JClass, JString};
 use jni::sys::jstring;
 
 #[no_mangle]
-pub extern "system" fn Java_HelloWorld_hello(
+pub extern "system" fn Java_com_eactative_ua_rn_HelloWorld_hello(
     env: JNIEnv,
     class: JClass,
     input: JString,

@@ -5,7 +5,7 @@ run: lib
 .PHONY: lib
 
 javah:
-	$(JAVA_HOME)javah ./HelloWorld
+	$(JAVA_HOME)javac -h ./java ./java/HelloWorld.java
 
 lib:
 	cargo build
