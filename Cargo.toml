@@ -11,6 +11,7 @@ jni = "0.19.0"
 [dependencies]
 futures = "0.3"
 reqwest = { version = "0.11", features = ["blocking", "json"] }
+openssl-sys = { version = "0.9.76", features = ["vendored"] }
 
 
 [lib]
