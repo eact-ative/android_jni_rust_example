@@ -4,6 +4,9 @@ use jni::objects::{JClass, JString};
 
 use jni::sys::jstring;
 
+mod client;
+mod async_try;
+
 #[no_mangle]
 pub extern "system" fn Java_com_eactative_ua_rn_HelloWorld_hello(
     env: JNIEnv,

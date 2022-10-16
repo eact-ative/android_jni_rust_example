@@ -3,4 +3,5 @@ ar = "/Users/niko/Library/Android/sdk/ndk/21.4.7075529/toolchains/aarch64-linux-
 linker = "/Users/niko/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android30-clang++"
 
 [build]
-target = "aarch64-linux-android"
+# target = "aarch64-linux-android"
+target = "aarch64-apple-darwin"
