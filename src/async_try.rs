@@ -119,6 +119,12 @@ impl Executor {
     }
 }
 
+#[derive(Debug)]
+struct RawPt {
+    data: String,
+    rData: *const String,
+}
+
 
 #[cfg(test)]
 mod tests {
@@ -134,5 +140,20 @@ mod tests {
 
         drop(spawner);
         executor.run();
+    }
+
+    #[test]
+    fn raw_pt() {
+        let str = String::from("data");
+        let mut r1 = RawPt {
+            data: str,
+            rData: std::ptr::null(),
+        };
+        r1.rData = &r1.data;
+        println!("{:?}", r1.rData);
+        println!("{:?}", unsafe { &*(r1.rData) });
+        r1.data = String::from("newData");
+        println!("{:?}", r1.rData);
+        println!("{:?}", unsafe { &*(r1.rData) });
     }
 }
