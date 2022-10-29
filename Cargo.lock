@@ -428,6 +428,7 @@ dependencies = [
  "openssl-sys",
  "reqwest",
  "rusqlite",
+ "thiserror",
  "tokio",
 ]
 
